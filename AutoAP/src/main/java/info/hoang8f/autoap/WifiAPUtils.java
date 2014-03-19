@@ -46,6 +46,13 @@ public class WifiAPUtils {
                 configuration.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
             } else if (securityType.equals(SECURE_WPA2)) {
                 configuration.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_EAP);
+//                configuration.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);
+//                configuration.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.CCMP);
+//                configuration.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
+//                configuration.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.TKIP);
+//                configuration.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.CCMP);
+//                configuration.allowedProtocols.set(WifiConfiguration.Protocol.RSN);
+
             }
             configuration.preSharedKey = password;
         }
